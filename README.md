@@ -1,27 +1,61 @@
-# Markdown
+# Using Markdown in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+## Overview
 
-## Development server
+This project is a simple Angular-based quiz application designed for educational purposes. It utilizes ngx-markdown for rendering Markdown content and Angular Material for a polished user interface.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+Follow these steps to set up and run the project on your local machine.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Step 1: Project Setup
 
-## Build
+Select a directory where you want to save your project files. Open a terminal in this directory and create the base project using the Angular CLI:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+ng new Markdown
+```
 
-## Running unit tests
+### Step 2: Enter Project Directory
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Navigate to the project directory:
 
-## Running end-to-end tests
+```
+cd Markdown
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Step 3: Install ngx-markdown
 
-## Further help
+Install the ngx-markdown library:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+npm install ngx-markdown
+```
+
+Note: During the installation in a test environment, if you encounter a dependency-related error, it may be due to ngx-markdown requiring a more recent version of Angular. In this case, update Angular using the following commands and then repeat the installation:
+
+```
+npm install -g @angular/cli
+ng update @angular/core @angular/cli
+```
+
+### Step 4: Add Angular Material
+
+Add Angular Material to your project:
+
+```
+ng add @angular/material
+# Select options as follows:
+Would you like to proceed? Yes
+? Choose a prebuilt theme name, or "custom" for a custom theme: Indigo/Pink
+? Set up global Angular Material typography styles? Yes
+? Set up browser animations for Angular Material? Do not include
+```
+
+### Step 5: Import Required Modules
+
+Import the MarkdownModule and necessary Angular Material modules in your project module. In this project, we are using the package in AppModule. Refer to the code in the src\app\app.module.ts file of this repository.
+
+### Step 6: Develop the Component
+
+Develop the component for this project. Work on the src\app\app.component.ts and src\app\app.component.html files.

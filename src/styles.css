@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/* styles.css */
+.markdown-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.markdown-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.markdown-table th {
+  background-color: #f2f2f2; /* Cor cinza claro */
+}
+
+.markdown-table table,
+.markdown-table th,
+.markdown-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
